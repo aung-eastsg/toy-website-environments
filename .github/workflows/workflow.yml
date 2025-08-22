@@ -12,6 +12,8 @@ permissions:
   contents: read
 
 jobs:
+
+  # Lint the Bicep file.
   lint:
     uses: ./.github/workflows/lint.yml
 
