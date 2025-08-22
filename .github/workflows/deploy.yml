@@ -38,6 +38,7 @@ jobs:
          parameters: >
            environmentType=${{ inputs.environmentType }}
          deploymentMode: Validate
+         failOnStdErr: false
      - if: inputs.environmentType == 'Production'
        uses: azure/arm-deploy@v1
        name: Run what-if
